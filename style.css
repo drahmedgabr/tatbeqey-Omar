@@ -70,9 +70,92 @@ body {
     transition: 0.3s;
 }
 
-#header #menuIcon:hover #middleBar {
+#header #menuDiv:hover #middleBar {
     width: 100%;
 }
 
+#header .container #menuDiv {
+    position: relative;
+}
+
+#header .container #menuDiv:hover ul {
+    display: block;
+}
+
+#header .container ul {
+    display: none;
+    width: 200px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    list-style: none;
+    right: -30px;
+    top: 40px;
+    box-shadow: 0 0 5px rgba(128, 128, 128, 0.694);
+}
+
+#header .container ul::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: -10px;
+    right: 40px;
+    transform: rotate(45deg);
+}
+
+#header .container ul a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#header .container ul a li {
+    transition: 0.3s;
+}
+
+#header .container ul a li:hover {
+    padding-left: 15px;
+}
+
+
+#header .container ul .divider {
+    height: 1px;
+    background-color: var(--main-color);
+    margin: 10px 0;
+}
+
 /* End Header */
+
+/* Start Landing */
+
+
+#landing {
+    height: 100vh;
+    background-image: url(images/coding.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.615);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#landing #centerDiv {
+    position: relative;
+}
+
+/* End Landing */
 

@@ -7,6 +7,9 @@ html {
     --main-color: #333333;
     --secondary-color:  #fa694e;
     --hover-color:  #c0351c;
+    --detials-color: #009688;
+    --light-gey-bkg: #F6F6F6;
+    --title-grey-color: #C5C5C5;
 }
 
 body {
@@ -37,6 +40,13 @@ body {
     .container {
         width: 1170px;
     }
+}
+
+.greyTitle {
+    color: var(--title-grey-color);
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: 8px;
 }
 
 /* Start header */
@@ -223,4 +233,43 @@ body {
     flex-wrap: wrap;
 }
 
+#services .container .service {
+    width: 300px;   
+    text-align: center;
+    margin: 20px;
+}
+
+#services .container .service i {
+    color: var(--secondary-color);
+    font-size: 60px;
+}
+
+#services .container .service h1 {
+    font-size: 35px;
+    margin: 25px 0;
+}
+
+#services .container .service p {
+    font-size: 25px;
+    color: var(--detials-color);
+}
+
 /* End Service */
+
+/* Start Stories */
+
+#stories {
+    padding: 100px 0;
+    background-color: var(--light-gey-bkg);
+}
+
+#stories .container {
+    text-align: center;
+}
+
+#stories .container p {
+    margin-top: 25px;
+    font-size: 22px;
+}
+
+/* End Stories */

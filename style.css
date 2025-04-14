@@ -10,6 +10,8 @@ html {
     --detials-color: #009688;
     --light-gey-bkg: #F6F6F6;
     --title-grey-color: #C5C5C5;
+    --card-color: #E7E7E7;
+    --books-color: #CFCFCF;
 }
 
 body {
@@ -267,9 +269,79 @@ body {
     text-align: center;
 }
 
-#stories .container p {
+#stories .container .subtitleText {
     margin-top: 25px;
     font-size: 22px;
+}
+
+#stories .container .contents {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+
+#stories .container .contents .cards .card {
+    width: 220px;
+    height: 265px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(128, 128, 128, 0.694);
+    margin: 20px;
+    text-align: center;
+}
+
+#stories .container .contents .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#stories .container .contents .cards .card .cardImg {
+    height: 50%;
+    background-color: var(--card-color);
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#stories .container .contents .cards .card .cardImg img {
+    width: 50%;
+}
+
+#stories .container .contents .cards .card .cardDetails {
+    padding: 15px;
+}
+
+#stories .container .contents .cards .card .cardDetails h3 {
+    font-size: 20px;
+}
+
+#stories .container .contents .cards .card .cardDetails p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+#stories .container .contents .imgDiv {
+    width: 300px;
+    height: 400px;
+    position: relative;
+}
+
+#stories .container .contents .imgDiv::before {
+    content: "";
+    width: 40%;
+    height: 100%;
+    background-color: var(--books-color);
+    position: absolute; 
+    right: 0;   
+    top: -10%;
+}
+
+
+#stories .container .contents .imgDiv img {
+    width: 300px;
+    position: relative;
 }
 
 /* End Stories */

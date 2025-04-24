@@ -12,6 +12,8 @@ html {
     --title-grey-color: #C5C5C5;
     --card-color: #E7E7E7;
     --books-color: #CFCFCF;
+    --input-color: #F1F5F8;
+    --active-color:  #6d2315;
 }
 
 body {
@@ -201,6 +203,10 @@ body {
     background-color: var(--hover-color);
 }
 
+#landing #centerDiv button:active {
+    background-color: var(--active-color);
+}
+
 
 @media (min-width: 1200px) {
     
@@ -366,10 +372,11 @@ body {
     display: flex;
     align-items: center;
     margin-top: 50px;
+    flex-direction: column;
 }
 
 #contact .container .contents .details {
-    margin-right: 50px;
+   margin-bottom: 20px;
 }
 
 #contact .container .contents .details h3 {
@@ -382,4 +389,116 @@ body {
     color: var(--detials-color);
 }
 
+#contact .container .contents .form {
+    width: 100%;
+}
+
+#contact .container .contents .form #firstRow {
+    display: flex;
+}
+
+#contact .container .contents .form #firstRow #emailInput {
+    margin-left: 10px;
+}
+
+#contact .container .contents .form input, #contact .container .contents .form textarea {
+    width: 100%;
+    border: none;
+    background-color: var(--input-color);
+    font-size: 22px;
+    padding: 20px;
+    border-radius: 10px;
+    outline-color: var(--secondary-color);
+}
+
+#contact .container .contents .form #subjectInput {
+    width: 100%;
+    margin: 15px 0;
+}
+
+#contact .container .contents .form textarea {
+    width: 100%;
+    resize: none;
+}
+
+#contact .container .contents .form button {
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 22px;
+    border: none;
+    width: 100%;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#contact .container .contents .form button:hover {
+    cursor: pointer;
+    background-color: var(--hover-color);
+}
+
+#contact .container .contents .form button:active {
+    background-color: var(--active-color);
+}
+
+@media (min-width: 992px) {
+    #contact .container .contents {
+        flex-direction: row;
+    }
+
+    #contact .container .contents .details {
+        margin-right: 50px;
+    }
+}
+
 /* End Contact */
+
+/* Start Footer */
+
+#footer {
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+}
+
+#footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+#footer .container p {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#footer .container #socialIcons {
+    display: flex;
+}
+
+#footer .container #socialIcons .iconDiv {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: var(--main-color);
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+@media (min-width: 992px) {
+    #footer .container {
+        flex-direction: row;
+    }
+
+    #footer .container p {
+        margin-bottom: 0;
+    }
+}
+
+/* End Footer */

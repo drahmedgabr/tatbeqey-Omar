@@ -14,6 +14,9 @@ html {
     --books-color: #CFCFCF;
     --input-color: #F1F5F8;
     --active-color:  #6d2315;
+
+    scroll-behavior: smooth;
+
 }
 
 body {
@@ -284,6 +287,11 @@ body {
     display: flex;
     margin-top: 50px;
     align-items: center;
+}
+
+#stories .container .contents .cards a {
+    text-decoration: none;
+    color: black;
 }
 
 #stories .container .contents .cards .card {
